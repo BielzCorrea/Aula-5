@@ -1,75 +1,131 @@
-body {
- font-family: monospace;
- color: #333;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+    /* essa formatação serve para resetar os parametros */
+}
+
+body{
+   background-color: #E5E5E5;
 
 }
 
-h2 {
-   text-align: center;
-   margin: 20px 0 0 0;
-   font-size: 1.25em;
-
-}
-
-.container { 
-
-    max-width: 400px;
-    margin: 0 auto;
+.header {
     display: flex;
-    border: 1px solid  #ccc
+    width: 100%;
+    background-color: #222222;
+    padding: 10px 20px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    align-items: center;
 }
 
-.item{ 
-    margin: 5px;
-    background: tomato;
+
+
+.header nav:first-child {
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.header li+li {
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 986px;
+    height: 350px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card1 {
+    height: 100%;
+    background-image: url("../img/delivery.png");
+    width: 490px;
+
+}
+
+.card1 p {
+    color: red;
     text-align: center;
-    font-size: 1.5em;
-    flex: 1;
-}
-
-.row{
-  flex-direction: row;
-}
-
-.row-reverse {
-
-  flex-direction: row-reverse;
-}
-
-.column{
-  flex-direction: column;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 5px;
 
 }
 
-.column-reverse{
+.card1 p .mark {
+    color: white;
+}
 
-  flex-direction: column-reverse;
-} 
-
-.stretch {
-  align-items: stretch;
+.card2 {
+    background-color: #fff;
+    height: 100%;
+    width: 490px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
 
 }
 
-.flex-start{
-  align-items: flex-start;
+.card2 .top5 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
-.flex-end{
-  align-items: flex-end;
+.top5 ol{
+    list-style-position: inside;
+    text-align: left;
+    width: 146px;
 }
 
-.center{
-  align-items: center;
+ol p {
+     font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 20px;
 }
 
-.baseline{
- align-items: baseline;
+ol li {
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
-.center-aligmente{
-  height: 400px;
-  justify-content: center;
-  align-items: center;
+footer.footer .logo {
+    order: 1;
 }
+
+footer.footer ul {
+
+    display: block;
+}
+
+footer.footer ul li+li{
+
+   margin: 0;
+
+}
+
+
+
 

@@ -1,126 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Server para alguns navegador indentificar que estamos trabalhando com html 5-->
+<html lang="pt-br">
+<!-- lang é a linguagem do Doc-->
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--charset=utf8 singinifca que meu doc aceita o maior numero de caracteres possiveis  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Aula11/css/style.css">
-    <title>flex-direction</title>
-</head>
+    <!-- Configura a pagina para que ela seja visualizada tando em samrt phones, tabets, etc..-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Conecta o HTML ao CSS -->
+    <title>Aula11</title>
+
 <body>
 
+    <header class="header">
+         
+        <div class="logo">
+            <img src="./img/logo.svg" alt="Logo da Pizzaria">
+        </div>
 
-    <h2>flex-direction: row;</h2>
-<section class="container row">
-	<div class="item">1</div>
-	<div class="item">2</div>
-	<div class="item">3</div>
-</section>
+        <nav> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Promoção</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
 
-<h2>flex-direction: row-reverse;</h2>
-<section class="container row-reverse">
-	<div class="item">1</div>
-	<div class="item">2</div>
-	<div class="item">3</div>
-</section>
-
-<h2>flex-direction: column;</h2>
-<section class="container column">
-	<div class="item">1</div>
-	<div class="item">2</div>
-	<div class="item">3</div>
-</section>
-
-<h2>flex-direction: column-reverse;</h2>
-<section class="container column-reverse">
-	<div class="item">1</div>
-	<div class="item">2</div>
-	<div class="item">3</div>
-</section>
+        </nav>
 
 
 
-<h2>align-items: flex-start;</h2>
-<section class="container flex-start">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+    </header>
 
-<h2>align-items: flex-end;</h2>
-<section class="container flex-end">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+    <main>
 
-<h2>align-items: center;</h2>
-<section class="container center">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+        <section class="container">
+           
+            <div class="card1">
+                <p>Envio grátis <span class="mark">comprando</span> 2 pizzas</p>
+            </div>
+             
+            <div class="card2">
+                <h2>Cardápio de pizzas</h2>
+                         
+                <div class="top5"> 
+                    <ol type="1">
+                        <p>Top 5</p>
+                     
+                    <li>Frango e Catupiry</li>
+                    <li>Hawaiana</li>
+                    <li>Bolonhesa</li>
+                    <li>Fugazzeta</li>
+                    <li>Calabresa</li>    
+   
+                   </ol>
+   
+                   <div class="container-img">
+                       <img src="./img/pizza falling.svg" alt="Ilustração de uma Pizza">
+                   </div>
 
-<h2>align-items: baseline;</h2>
-<section class="container baseline">
-	<div class="item teste">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+                </div>
+                
 
-<h2>align-items: flex-stretch; // column</h2>
-<section class="container stretch column">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+            </div>
 
-<h2>align-items: flex-start; // column</h2>
-<section class="container flex-start column">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+        
 
-<h2>align-items: flex-end; // column</h2>
-<section class="container flex-end column">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+        </section>
+    </main>
 
-<h2>align-items: center; // column</h2>
-<section class="container center column">
-	<div class="item">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+    <footer class="footer header">
+         
+        <div class="logo">
+            <img src="./img/logo.svg" alt="Logo da Pizzaria">
+        </div>
 
-<h2>align-items: baseline; // column</h2>
-<section class="container baseline column">
-	<div class="item teste">1</div>
-	<div class="item">Teste 2 do Item</div>
-	<div class="item">Teste 3 do Item Agora Mesmo</div>
-	<div class="item">Teste 4</div>
-</section>
+        <nav> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Promoção</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
 
-<h2>align-items: center; e justfy-content: center;</h2>
-<section class="container alinhamento-central">
-	<div class="item">Esse item está verticalmente alinhado ao centro.</div>
-</section>
+        </nav>
 
 
 
+    </footer>
 
-
+      
 
 </body>
-</html>
